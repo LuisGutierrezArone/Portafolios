@@ -1,0 +1,86 @@
+@importar  ' variables '
+@importar  ' mixins '
+@import  ' media query '
+
+.menú
+    margen superior : 2 rem
+    acolchado : .5 rem
+    fondo : rgba ( # 000 , .5 )
+    borde superior : 0.1 rem  solid rgba ( # 565656 , .5 )
+    borde inferior : 0.1 rem  solid rgba ( # 565656 , .5 )
+    posición : pegajosa
+    índice z : 11
+    arriba : 0
+    pantalla : cuadrícula
+    columnas de plantilla de cuadrícula : 10 %  automático
+    .foto
+        ancho : 100 %
+        altura : 100 %
+        pantalla : flex
+        alinear-elementos : centro
+        alineación de texto : centro
+        img
+            ancho : 2.5 rem
+            radio del borde : 50 %
+            margen derecho : 1,25 rem
+    .contenedor-menu
+        ancho : 100 %
+        altura : 100 %
+        pantalla : flex
+        alinear-elementos : centro
+        justificar-contenido : espacio-alrededor
+        acolchado : 0
+        un
+            alineación de texto : centro
+            decoración de texto : ninguna
+            color : $ blanco
+            tamaño de fuente : .9 rem
+            altura de línea : 1 rem
+            text-transform : mayúsculas
+            & : desplazarse
+                color : $ rojo
+    .idiomas
+        pantalla : ninguna
+        columnas de plantilla de cuadrícula : repetir (au to - fit, m in max ( 1.5625 rem , 1 fr ))
+        alinear-elementos : centro
+        alineación de texto : centro
+        img .active
+            opacidad : .5
+        img
+            ancho : 1.5 rem
+            & : desplazarse
+                opacidad : .5
+
+.encabezamiento
+    altura : 30 rem
+    ancho : 100 %
+    .contenedor-header
+        altura : 100 %
+        pantalla : flex
+        dirección flexible : columna
+        justificar-contenido : centro
+        alinear-elementos : centro
+        .nombre
+            tamaño de fuente : 1.8 rem       
+            espaciado entre letras : .2 rem
+            familia de fuentes : " Indie Flower " , sans-serif
+            font-weight : negrita
+            .fundirse
+                animación : fadeIn 3 s
+                @keyframes fadeIn
+                    0%
+                        opacidad : 0
+                    50%
+                        opacidad : .5
+                    100%
+                        opacidad : 1
+        h2
+            ancho : 14.75 rem
+            alineación de texto : centro
+            familia de fuentes : " Indie Flower " , sans-serif
+            espaciado entre letras : .1 rem
+            tamaño de fuente : 1.2 rem       
+        blockquote
+            altura de línea : 1,5
+            estilo de fuente : cursiva  
+            color : # 9AA1A9
